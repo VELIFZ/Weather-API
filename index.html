@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Custom links -->
+<link rel="stylesheet" href="main.css">
+<script src="main.js" defer></script>
+
+<title>Weather Forecast</title>
+</head>
+<body class="bg-dark">
+
+    <div class="container mt-5 mb-5" id="renk"> <!-- buraya arkaplan koy koyacaksan -->
+        <div  class="row justify-content-center">
+            <div class="col-4 rounded-3 bg-dark mb-5 mt-5">
+                <!-- for form and button-->
+                <form id="weatherForm" class="mb-5 mt-5">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-auto">
+                        <input type="text" name="city" class="form-control" id="city" placeholder="City Name" >
+                    </div>
+                    <div class="row justify-content-center mb-5 mt-3">
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-light btn-">Search</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+
+                <!--Display Results-->
+                <div class="row justify-content-center">
+                    <div class = col-auto id="currentWeather">
+                        <h1 style="color: aliceblue; ">Weather in </h1>
+                        <div class="card mt-3 mb-5" style="width: 18rem;">
+                            <img src="...icon" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">City Name, State or Country</h5>
+                              <h6 class="text-right font-weight-light">Day, Time</h6>
+                            </div>
+                            <!--
+                            <div>
+                                <div class="left">
+                                  <p>Humidity:</p>
+                                </div>
+                                <div class="right>
+                                  <p class="humidity">0 %</p>
+                                -->
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Description:<span id="des"> Cloud</span></li>
+                              <li class="list-group-item">Temperature:<span> Cloud</span></li>
+                              <li class="list-group-item">Fells Like:<span> Cloud</span></li>
+                              <li class="list-group-item">Humidity: <span> x%</span></li>
+                              <li class="list-group-item">Wind: <span id="speed">x mph</span></li>
+                              <li class="list-group-item">Mx-temp:<span> Cloud</span></li>
+                              <li class="list-group-item">Min-temp:<span> Cloud</span></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
