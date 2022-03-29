@@ -2,13 +2,13 @@
     background-color: linen;
 }
 
-.left {
+#left {
     float: left;
     font-size: 16px;
     font-weight: 300;
   }
   
-  .right {
+  #right {
     float: left;
     font-size: 16px;
     font-weight: 400;

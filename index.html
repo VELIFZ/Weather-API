@@ -19,50 +19,57 @@
     <div class="container mt-5 mb-5" id="renk"> <!-- buraya arkaplan koy koyacaksan -->
         <div  class="row justify-content-center">
             <div class="col-4 rounded-3 bg-dark mb-5 mt-5">
+
                 <!-- for form and button-->
                 <form id="weatherForm" class="mb-5 mt-5">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-auto">
-                        <input type="text" name="city" class="form-control" id="city" placeholder="City Name" >
-                    </div>
-                    <div class="row justify-content-center mb-5 mt-3">
+                    <div class="row justify-content-center mb-5">
                         <div class="col-auto">
-                            <button type="submit" class="btn btn-light btn-">Search</button>
+                            <input type="text" name="city" class="form-control" id="city" placeholder="City Name" >
+                        </div>
+                        <div class="row justify-content-center mb-5 mt-3">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-light" onClick=getData()>Search</button>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </form>
 
                 <!--Display Results-->
-                <div class="row justify-content-center">
-                    <div class = col-auto id="currentWeather">
-                        <h1 style="color: aliceblue; ">Weather in </h1>
-                        <div class="card mt-3 mb-5" style="width: 18rem;">
-                            <img src="...icon" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">City Name, State or Country</h5>
-                              <h6 class="text-right font-weight-light">Day, Time</h6>
-                            </div>
-                            <!--
-                            <div>
-                                <div class="left">
-                                  <p>Humidity:</p>
-                                </div>
-                                <div class="right>
-                                  <p class="humidity">0 %</p>
-                                -->
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Description:<span id="des"> Cloud</span></li>
-                              <li class="list-group-item">Temperature:<span> Cloud</span></li>
-                              <li class="list-group-item">Fells Like:<span> Cloud</span></li>
-                              <li class="list-group-item">Humidity: <span> x%</span></li>
-                              <li class="list-group-item">Wind: <span id="speed">x mph</span></li>
-                              <li class="list-group-item">Mx-temp:<span> Cloud</span></li>
-                              <li class="list-group-item">Min-temp:<span> Cloud</span></li>
-                            </ul>
-                          </div>
+                <div id="Weather" class="row justify-content-center ms-2 me-2">
+                    <div class="col-auto">
+                        <h3 id="baslik" style="color: aliceblue; "></h3>
                     </div>
+                    <!-- Card -->
+                    <div class="card mt-3 mb-5" style="width: 18rem;">
+                        <img id="icon" src="" class="card-img-top">
+                        <div class="card-body mb-3">
+                            <h5 id ="cityname" class="card-title float-sm-end"></h5>
+                            <h6 id="date" class="text-right float-sm-end"></h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Sky:</p>
+                                <p>Temperature:</p>
+                                <p>Fells Like:</p>
+                                <p>Humidity:</p>
+                                <p>Wind:</p>
+                                <p>Max-temp:</p>
+                                <p>Min-temp:</p>
+                            </div>
+                            <div class="col-6">
+                                <p id="descr"></p>
+                                <p id="temp"></p>
+                                <p id="feels"></p>
+                                <p id="humi"></p>
+                                <p id="wind"></p>
+                                <p id="max_temp"></p>
+                                <p id="min_temp"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--card ends here-->
                 </div>
+                <!--Display ends here-->
             </div>
         </div>
     </div>
