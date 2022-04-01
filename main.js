@@ -1,11 +1,9 @@
-console.log('elif')
 
 function getData() {
-    console.log('as')
     let city = document.querySelector('#city').value;
-    const API_KEY = '';
+    //const API_KEY = '';
     console.log(city);
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=4f628866358be722e72afa5f6680078b`)
     .then(response => response.json())
     .then(data => {
         console.log(data)
