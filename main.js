@@ -1,4 +1,7 @@
+console.log('elif')
+
 function getData() {
+    console.log('as')
     let city = document.querySelector('#city').value;
     const API_KEY = '';
     console.log(city);
